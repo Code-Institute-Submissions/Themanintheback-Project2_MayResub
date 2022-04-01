@@ -1,20 +1,22 @@
-const computerChoiceDisplay = document.querySelector('#computer-choice')
-const userChoiceDisplay = document.querySelector('#user-choice')
-const resultDisplay = document.querySelector('#result')
-const possibleChoices = document.querySelectorAll('button')
-const win = document.querySelector('.win')
-const lose = document.querySelector('.lose')
-let userChoice
-let computerChoice
-let result
-let userscore = 0
-let computerscore = 0
+const computerChoiceDisplay = document.querySelector('#computer-choice');
+const userChoiceDisplay = document.querySelector('#user-choice');
+const resultDisplay = document.querySelector('#result');
+const possibleChoices = document.querySelectorAll('button');
+const win = document.querySelector('.win');
+const lose = document.querySelector('.lose');
+let userChoice;
+let computerChoice;
+let result;
+let userscore = 0;
+let computerscore = 0;
+let turns = 0;
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
    userChoice = e.target.id
    userChoiceDisplay.innerHTML = userChoice
    generateComputerChoice()
    getResult()
+   gameover()
 }))
 
 function generateComputerChoice() {
@@ -37,15 +39,7 @@ function getResult() {
    if (computerChoice === userChoice) {
       result = 'Tie'
    }else if(userChoice === 'rock') {
-      if(computerChoice === 'paper') {
-         result = 'you lose'
-         computerscore++
-         lose.innerHTML = computerscore
-      }else if(computerChoice === 'scissors') {
-         result = 'you win'
-         userscore++
-         win.innerHTML = userscore
-      }else if(computerChoice === 'lizard') {
+      if(computerChoice === 'scissors') {
          result = 'you win'
          userscore++
          win.innerHTML = userscore
@@ -60,30 +54,14 @@ function getResult() {
          result = 'you win'
          userscore++
          win.innerHTML = userscore
-      }else if(computerChoice === 'scissors') {
+      }else {
          result = 'you lose'
          computerscore++
          lose.innerHTML = computerscore
-      }else if(computerChoice === 'lizard') {
-         result = 'you lose'
-         computerscore++
-         lose.innerHTML = computerscore
-      }else{
-         result = 'you win'
-         userscore++
-         win.innerHTML = userscore
       }
    }
    else if(userChoice = 'scissors') {
-      if(computerChoice === 'rock') {
-         result = 'you lose'
-         computerscore++
-         lose.innerHTML = computerscore
-      }else if(computerChoice === 'paper') {
-         result = 'you win'
-         userscore++
-         win.innerHTML = userscore
-      }else if(computerChoice === 'lizard') {
+      if(computerChoice === 'paper') {
          result = 'you win'
          userscore++
          win.innerHTML = userscore
@@ -94,5 +72,11 @@ function getResult() {
       }
    }
    resultDisplay.innerHTML = result
+}
+
+function gameover() {
+   const turnsLeft = document.querySelector('.turns-left');
+   turns++;
+   turnsLeft.innerHTML = 5-turns
 }
 
