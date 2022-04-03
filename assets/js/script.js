@@ -16,7 +16,15 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
    userChoiceDisplay.innerHTML = userChoice
    generateComputerChoice()
    getResult()
-   gameover()
+   countDown()
+   
+   
+   // calls the gameOver function after 5 turns
+   if(turns == 5) {
+      gameOver(possibleChoices, countDown)
+   }
+   
+
 }))
 
 function generateComputerChoice() {
@@ -74,9 +82,22 @@ function getResult() {
    resultDisplay.innerHTML = result
 }
 
-function gameover() {
+function countDown() {
    const turnsLeft = document.querySelector('.turns-left');
    turns++;
    turnsLeft.innerHTML = 5-turns
 }
 
+function gameOver(possibleChoices, countDown) {
+   if(userscore > computerscore) {
+      alert('you win')
+      location.reload()
+   }else if(userscore < computerscore) {
+      alert('you lose')
+      location.reload()
+   }else {
+      alert('Tie')
+      location.reload()
+   }
+
+}
