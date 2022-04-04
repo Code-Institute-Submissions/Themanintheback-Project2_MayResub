@@ -1,7 +1,7 @@
 const computerChoiceDisplay = document.querySelector('#computer-choice');
 const userChoiceDisplay = document.querySelector('#user-choice');
 const resultDisplay = document.querySelector('#result');
-const possibleChoices = document.querySelectorAll('button');
+const possibleChoices = document.querySelectorAll('.button');
 const win = document.querySelector('.win');
 const lose = document.querySelector('.lose');
 let userChoice;
@@ -19,7 +19,8 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
    countDown()
    
    
-   // calls the gameOver function after 5 turns
+   // Calls the gameOver function after 5 turns
+
    if(turns == 5) {
       gameOver(possibleChoices, countDown)
    }
@@ -27,6 +28,11 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 
 }))
 
+/**
+ * This generates random numbers between 1 - 3 for the computer by giving 
+ * them the value of Rock, Paper and Scissors. Which will then be displayed 
+ * to the player.
+ */
 function generateComputerChoice() {
    const randomNumber = Math.floor(Math.random() * 3) + 1
    
@@ -42,6 +48,10 @@ function generateComputerChoice() {
    computerChoiceDisplay.innerHTML = computerChoice
 }
 
+/**
+ * This checkes the players choice(the buttons) with the computers choice(generateComputerChoice)
+ * to determine the win and loser. Then will increment either scores by 1.
+ */
 function getResult() {
    
    if (computerChoice === userChoice) {
@@ -49,11 +59,11 @@ function getResult() {
    }else if(userChoice === 'rock') {
       if(computerChoice === 'scissors') {
          result = 'you win'
-         userscore++
+         userscore++ // increments user score by 1 if won
          win.innerHTML = userscore
       }else {
          result = 'you lose'
-         computerscore++
+         computerscore++ // increments computers score by 1 if user lost
          lose.innerHTML = computerscore
       }
    }
@@ -82,12 +92,20 @@ function getResult() {
    resultDisplay.innerHTML = result
 }
 
+/**
+ * This tells the user how many turns they have left by listening for the 
+ * users clicks of the buttons on the page.
+ */
 function countDown() {
    const turnsLeft = document.querySelector('.turns-left');
-   turns++;
-   turnsLeft.innerHTML = 5-turns
+   turns++; // incrementes the turns by 1
+   turnsLeft.innerHTML = 5-turns // Displays turns left 
 }
 
+/**
+ * This will check the user score and the computers score the determine the 
+ * winner of the game and display it to the user.
+ */
 function gameOver(possibleChoices, countDown) {
    if(userscore > computerscore) {
       alert('you win')
