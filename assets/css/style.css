@@ -1,16 +1,38 @@
-/* *{
-    padding: 10px;
-    margin: 10px;
+*{
+    padding: 5px;
+    margin: 5px;
     box-sizing: border-box;
     background-color: white;
     color: #445361;
+    font-family: 'Roboto', sans-serif;
+}
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 1.5rem;
 }
 
 div {
     display: flex;
     align-items: center;
     justify-content: center;
-} */
+}
 
-
-
+.button {
+    border-radius: 30%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 10px solid;
+    border-top-color: currentcolor;
+    border-right-color: currentcolor;
+    border-bottom-color: currentcolor;
+    border-left-color: currentcolor;
+    width: 100px;
+    height: 100px;
+    font-size: 3.2rem;
+    margin: 10px;
+    transition: all 0.5s;
+}
