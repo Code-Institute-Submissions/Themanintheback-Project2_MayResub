@@ -11,8 +11,8 @@ let userscore = 0;
 let computerscore = 0;
 let turns = 0;
 
-possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
-   userChoice = e.target.id
+possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', function() {
+   userChoice = this.id
    userChoiceDisplay.innerHTML = userChoice
    generateComputerChoice()
    getResult()
@@ -72,13 +72,13 @@ function getResult() {
          result = 'you win'
          userscore++
          win.innerHTML = userscore
-      }else {
+      }else{
          result = 'you lose'
          computerscore++
          lose.innerHTML = computerscore
       }
    }
-   else if(userChoice = 'scissors') {
+   else if(userChoice === 'scissors') {
       if(computerChoice === 'paper') {
          result = 'you win'
          userscore++
