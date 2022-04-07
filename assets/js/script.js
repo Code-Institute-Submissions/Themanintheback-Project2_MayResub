@@ -16,7 +16,7 @@ let turns = 0;
 This is the main function. It puts the buttons into a array and adds an eventlistener that waits for the users
 clicks and then calls upon the the other functions when programed.
 */
- 
+
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', function() {
    userChoice = this.id
    userChoiceDisplay.innerHTML = userChoice
