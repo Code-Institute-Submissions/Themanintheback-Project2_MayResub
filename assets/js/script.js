@@ -11,6 +11,12 @@ let userscore = 0;
 let computerscore = 0;
 let turns = 0;
 
+
+/*
+This is the main function. It puts the buttons into a array and adds an eventlistener that waits for the users
+clicks and then calls upon the the other functions when programed.
+*/
+ 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', function() {
    userChoice = this.id
    userChoiceDisplay.innerHTML = userChoice
@@ -29,9 +35,9 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 }))
 
 /**
- * This generates random numbers between 1 - 3 for the computer by giving 
+ * This generates a random number between 1 - 3 for the computer by giving 
  * them the value of Rock, Paper and Scissors. Which will then be displayed 
- * to the player.
+ * to the User.
  */
 function generateComputerChoice() {
    const randomNumber = Math.floor(Math.random() * 3) + 1
@@ -50,7 +56,7 @@ function generateComputerChoice() {
 
 /**
  * This checkes the players choice(the buttons) with the computers choice(generateComputerChoice)
- * to determine the win and loser. Then will increment either scores by 1.
+ * to determine the winer and loser. Then will increment either scores by 1.
  */
 function getResult() {
    
@@ -103,7 +109,7 @@ function countDown() {
 }
 
 /**
- * This will check the user score and the computers score the determine the 
+ * This will check the users score and the computers score to determine the 
  * winner of the game and display it to the user.
  */
 function gameOver(possibleChoices, countDown) {
