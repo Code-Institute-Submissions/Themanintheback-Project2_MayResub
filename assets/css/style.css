@@ -37,6 +37,33 @@ div {
     margin: 10px;
     transition: all 0.5s;
 }
+.button::after {
+    content:attr(data-type);
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: #445361;
+    position: relative;
+}
 
+.refresh {
+    border-radius: 30%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 10px solid;
+    border-top-color: currentcolor;
+    border-right-color: currentcolor;
+    border-bottom-color: currentcolor;
+    border-left-color: currentcolor;
+    width: 100px;
+    height: 100px;
+    font-size: 3.2rem;
+    margin: 10px;
+    transition: all 0.5s;
+}
 
-
+.refresh::after {
+    content:attr(data-type);
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: #445361;
+    position: relative;
+}

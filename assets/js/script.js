@@ -25,6 +25,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
    countDown()
    
    
+   
    // Calls the gameOver function after 5 turns
 
    if(turns == 5) {
@@ -125,3 +126,11 @@ function gameOver(possibleChoices, countDown) {
    }
 
 }
+
+/**
+ * This is the reload page function for the reload button at the 
+ * bottom of the HTML page.
+ */
+// function refresh(){
+//    window.location.reload("Refresh")
+//  }

@@ -12,7 +12,7 @@
     <!-- fontawesome link -->
     <script src="https://kit.fontawesome.com/f56dcf01fc.js" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>RPL</title>
+    <title>RPS</title>
 </head>
 <body>
     <h1 class="heading">
@@ -20,38 +20,54 @@
     </h1>
     <section>
 
+        <!-- This displays the players and computers choice -->
         <div class="display-block">
             <p>You: <span id="user-choice"></span></p>
             <p>Computer: <span id="computer-choice"></span></p>
             
         </div>
-        
+
+        <!-- This tells the user if they have won or lost the turn -->
+
         <div class="result-block">
             <p>Result: <span id="result"></span></p>
         </div>
 
+        <!-- These are the Rock, Paper, Sicssor buttons -->
+
         <div class="button-block">
-            <button class="button btn-rock" id="rock">
+            <button class="button btn-rock" id="rock" data-type="rock">
                 <i class="fa-solid fa-hand-fist"></i>
             </button>
-            <button class="button" id="paper">
+            <button class="button" id="paper" data-type="paper">
                 <i class="fa-solid fa-hand"></i>
             </button>
-            <button class="button" id="scissors">
+            <button class="button" id="scissors" data-type="scissors">
                 <i class="fa-solid fa-hand-scissors"></i>
             </button>
         </div>
+
+        <!-- This displays how many turns the user has left -->
 
         <div class="turn-block">
             <p>Turn Left: <span class="turns-left">5</span></p>
         </div>
 
+        <!-- This displays the users and computers score -->
+        
         <div class="win-lose-block">
             <p>win: <span class="win">0</span></p>
             <p>lose: <span class="lose">0</span></p>
         </div>
+        
+        <div>
+            <button class="refresh" onclick="refresh(this)">
+                <i class="fa-solid fa-arrows-rotate"></i>
+            </button>
+        </div>
 
     </section>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
