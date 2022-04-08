@@ -131,6 +131,6 @@ function gameOver(possibleChoices, countDown) {
  * This is the reload page function for the reload button at the 
  * bottom of the HTML page.
  */
-// function refresh(){
-//    window.location.reload("Refresh")
-//  }
+function refresh(possibleChoices){
+   window.location.reload("Refresh")
+ }
