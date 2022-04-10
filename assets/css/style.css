@@ -2,19 +2,20 @@
     padding: 5px;
     margin: 5px;
     box-sizing: border-box;
-    background-color: white;
-    color: #445361;
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(9, 10, 10);
 }
 
 .heading {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #445361;
 }
 
 p {
     font-size: 1.5rem;
+    color: #445361;
 }
 
 div {
@@ -31,6 +32,7 @@ div {
 .button {
     border-radius: 30%;
     background-color: rgba(0, 0, 0, 0);
+    color: #445361;
     border: 10px solid;
     border-top-color: currentcolor;
     border-right-color: currentcolor;
@@ -51,20 +53,28 @@ div {
     position: relative;
 }
 
-/* .btn-rock {
-    border-color: red;
-    color: rgb(0, 255, 76);
-} */
-
 .btn-rock:active,
 .btn-rock:hover {
+    color: #ce8128b9;
     background-color: black;
-    color: rgba(0, 0, 0, 0);
+}
+
+.btn-paper:active,
+.btn-paper:hover {
+    color: #EDE2D3;
+    background-color: black;
+}
+
+.btn-scissors:active,
+.btn-scissors:hover {
+    color: #b85229;
+    background-color: black;
 }
 
 .refresh {
     border-radius: 30%;
     background-color: rgba(0, 0, 0, 0);
+    color: #445361;
     border: 10px solid;
     border-top-color: currentcolor;
     border-right-color: currentcolor;
@@ -83,4 +93,10 @@ div {
     font-family: 'Roboto', sans-serif;
     color: #445361;
     position: relative;
+}
+
+.refresh:active,
+.refresh:hover {
+    color: #690a12;
+    background-color: black;
 }
