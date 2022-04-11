@@ -115,12 +115,8 @@ div {
     width: 100%;
     }
 
-    .person-icon {
-        width: 4%;
-    }
-
-    .computer-icon {
-        width: 15%;
-    }
+    .icon-block {
+    gap: 4.1rem;
+}
 
 }
