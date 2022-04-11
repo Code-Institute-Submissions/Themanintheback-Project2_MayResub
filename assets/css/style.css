@@ -6,6 +6,8 @@
     background-color: rgb(9, 10, 10);
 }
 
+
+
 .heading {
     display: flex;
     align-items: center;
@@ -28,6 +30,8 @@ div {
     width: 100%;
     margin:  40px 50px 5px 0px;
 }
+
+/* The Rock, Paper, scissors styling rules */
 
 .button {
     border-radius: 30%;
@@ -71,6 +75,8 @@ div {
     background-color: black;
 }
 
+/* The restart button styling rules */
+
 .refresh {
     border-radius: 30%;
     background-color: rgba(0, 0, 0, 0);
@@ -99,4 +105,22 @@ div {
 .refresh:hover {
     color: #690a12;
     background-color: black;
+}
+
+
+@media (min-width: 1200px) {
+ 
+    .icon-block {
+    font-size: 50px;
+    width: 100%;
+    }
+
+    .person-icon {
+        width: 4%;
+    }
+
+    .computer-icon {
+        width: 15%;
+    }
+
 }

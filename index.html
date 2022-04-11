@@ -20,6 +20,13 @@
     </h1>
     <section>
 
+        <!-- The icons of the player and computer underneath the heading -->
+        <div class="icon-block">
+            <div class="person-icon"><i class="fa-solid fa-person"></i></div>
+        
+            <div class="computer-icon"><i class="fa-solid fa-computer"></i></div>
+        </div>
+        
         <!-- This displays the players and computers choice -->
         <div class="display-block">
             <p>You: <span id="user-choice"></span></p>
@@ -61,8 +68,9 @@
             <p>lose: <span class="lose">0</span></p>
         </div>
         
+        <!-- This is the restart button -->
         <div>
-            <button class="refresh" onclick="refresh(this)">
+            <button class="refresh" onclick="refresh(this)" data-type="restart">
                 <i class="fa-solid fa-arrows-rotate"></i>
             </button>
         </div>
