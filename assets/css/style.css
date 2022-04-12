@@ -1,11 +1,17 @@
+
+/* Universal Selector rules */
+
 *{
     padding: 5px;
     margin: 5px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     background-color: #dfdfdf;
+    text-transform: capitalize;
 }
- 
+
+/* Heading rules */
+
 .heading {
     display: flex;
     align-items: center;
@@ -13,10 +19,14 @@
     color: #445361;
 }
 
+/* P element rule */
+
 p {
     font-size: 1.5rem;
     color: #445361;
 }
+
+/* div element rules */
 
 div {
     display: flex;
@@ -24,13 +34,17 @@ div {
     justify-content: center;
 }
 
+/* The rules for the icons at the top of the page
+(person and computer). */
+
 .icon-block {
     font-size: 50px;
     width: 100%;
+    color: #445361;
 }
 
 .icon-block {
-    gap: 4.1rem;
+    gap: 5rem;
 }
 
 #turn {
@@ -114,20 +128,9 @@ div {
     background-color: #dfdfdf;
 }
 
-
-@media (min-width: 1200px) {
- 
-    .icon-block {
-    font-size: 50px;
-    width: 100%;
-    color: #445361;
-    }
-
-    .icon-block {
-    gap: 5rem;
-    }
-
-}
+/* This will make the icons at the top of the page
+(person and computer) disappear when the user has
+a screen width of 500px or less. */
 
 @media (max-width: 500px) {
 
