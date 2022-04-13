@@ -4,7 +4,7 @@
 
 This is the main page of the website which provides a playable game of rock paper siccissors. The site is responsive and works on the a range of devices.
 
-<h2 align='center'><img src='/workspace/Project2/assets/images/Am-I-Responsive.png'</h2>
+<h2 align='center'><img src='/workspace/Project2/assets/images/Am-I-Responsive.png'></h2>
 
 # User Experience (UX)
 
