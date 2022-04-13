@@ -142,10 +142,16 @@ a screen width of 500px or less. */
 }
 
 /* This will change the headings font size to 1.7rem
-when the user has a screen width to 320px or less.  */
+and stop X-axis scrolling when the user has a screen width
+of 320px or less.  */
 
 @media (max-width: 320px) {
     .heading {
         font-size: 1.7rem
     }
+
+    html,body{
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
 }
