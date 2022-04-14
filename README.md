@@ -38,7 +38,7 @@ This is the main page of the website which provides a playable game of rock pape
         - The second main  colour is a shade of very light grey (#dfdfdf) for the sites 
         background colour.
 
-# Features
+# Technologies Used
 
 - ## Languages Used
 
@@ -47,3 +47,23 @@ This is the main page of the website which provides a playable game of rock pape
     - CSS
 
     - JavaScripty
+
+- ## Libraies & Programes used
+
+    1. Hover.CSS
+        - Hover.CSS was used on the button icons to change there colour when the user runs there cursor
+        over them.
+
+    1. Google Fonts
+        - Google fonts was used to import the 'Roboto' font into the style.CSS file for the project.
+
+    1. Font Awesome
+        - Font Awsome was used throuught the projects main page for aesthetic and UX purposes.
+
+    1. Git
+        - Git was used for version with Gitpod terminal to commit to Git and push to GitHub.
+
+    1. GitHUb
+        - GitHub was used to store the projects code after being pushed from Git
+
+# Features
