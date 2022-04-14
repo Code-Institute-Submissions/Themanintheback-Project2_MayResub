@@ -69,6 +69,30 @@ This is the main page of the website which provides a playable game of rock pape
 # Features
 
 - ## Heading
-    - ### Placed at the top the page is the games heading RoCe
+    - ### Placed at the top of the page is the games heading ROCK PAPER SCISSORS all in capital letters making easy to see and read for the user.
 
 <h2 align='center'><img src='assets/images/Heading.png'></h2>
+
+- ## Icons
+
+    - ### Directly underneath the Heading there are two icons used to represent the player and computer.
+
+    - ### The icon of the person is used to let the user know that information underneath it is refering to themselves.
+
+    - ### The icon of the computer is used to let the users know that information underneath it is refering to the  computer.
+
+    - ### The icons are also used for aesthetic purposes.
+
+<h2 align='center'><img src='assets/images/Icons.png'></h2>
+
+- ## Display Area
+
+    - ### underneath the icons are words YOU and COMPUTER
+
+    - ### When the user picks Rock, Paper or Scissors there choice will be displayed next the word YOU:
+
+    - ### At the same time the computers choice will also be displayed to the user next to the word COMPUTER:
+
+    <img src='assets/images/You-2.png'>
+
+    <img src='assets/images/computer.png'></h2>
