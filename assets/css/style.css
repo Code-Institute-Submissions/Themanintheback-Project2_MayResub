@@ -7,7 +7,8 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     background-color: #dfdfdf;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
+    text-transform: uppercase;
 }
 
 /* Heading rules */
@@ -17,6 +18,7 @@
     align-items: center;
     justify-content: center;
     color: #445361;
+    
 }
 
 /* P element rule */
@@ -129,29 +131,42 @@ div {
 }
 
 /* This will make the icons at the top of the page
-(person and computer) disappear when the user has
-a screen width of 500px or less. */
+(person and computer) disappear and change heading font size
+when the user has a screen width of 500px or less. */
 
 @media (max-width: 500px) {
+    .heading {
+        font-size: 1.6rem
+    }
 
     .icon-block {
         font-size: 50px;
         width: 100%;
         display: none;
     }
+
+    .display-block {
+        flex-direction: column
+    }
+    
 }
 
-/* This will change the headings font size to 1.7rem
-and stop X-axis scrolling when the user has a screen width
+/* This will change the headings font size to 1.7rem , paragraph font
+size and stop X-axis scrolling when the user has a screen width
 of 320px or less.  */
 
 @media (max-width: 320px) {
-    .heading {
-        font-size: 1.7rem
-    }
-
     html,body{
         overflow-x: hidden;
         overflow-y: auto;
-      }
+    }
+
+    .heading {
+        font-size: 1.4rem
+    } 
+
+   p {
+        font-size: 1.2rem;
+        color: #445361;
+    }
 }

@@ -67,3 +67,8 @@ This is the main page of the website which provides a playable game of rock pape
         - GitHub was used to store the projects code after being pushed from Git
 
 # Features
+
+- ## Heading
+    - ### Placed at the top the page is the games heading RoCe
+
+<h2 align='center'><img src='assets/images/Heading.png'></h2>
