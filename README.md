@@ -116,14 +116,38 @@ This is the main page of the website which provides a playable game of rock pape
 
 - ## Turns Area
 
-     - Underneath the buttons is display of showing how many turns the user haves left before the game ends.
+    - Underneath the buttons is display of showing how many turns the user haves left before the game ends.
 
-     - The user has 5 turns, it counts down from 5 - 0 
+    - The user has 5 turns, it counts down from 5 - 0 
 
-     - When the user has had 5 turns the game will tell the user if they have won or lost by an alert pop-up in the users broswer.
+    - When the user has had 5 turns the game will tell the user if they have won or lost by an alert pop-up in the users broswer.
 
-     <h2 float='left'>
-     <img src='assets/images/turns-left1.png'>
-     <img src='assets/images/turns-left2.png'>
-     </h2>
+    <h2 float='left'>
+    <img src='assets/images/turns-left1.png'>
+    <img src='assets/images/turns-left2.png'>
+    </h2>
      
+- ## Score Area
+
+    - Underneath the TURNS display is the display of the users and computers score.
+
+    - The WIN score will go up 1 point if the user beats the computer choice.
+
+    - The LOST score will go up 1 point if t he computer the beats users choice.
+
+    <h2 align='center'><img src='assets/images/score1.png'></h2>
+    <h2 align='center'><img src='assets/images/score2.png'></h2>
+
+- ## Restart Button
+
+    - Underneath the Score Area is the RESTART button.
+
+    - The button will refresh the page therfore starting the game again for the user.
+
+    - The button creates a level of convince for the user.
+
+    - The button will change to different colour when the users cursor hoovers over it. 
+
+    <h2 align='center'><img src='assets/images/restart.png'></h2>
+
+# Testing
