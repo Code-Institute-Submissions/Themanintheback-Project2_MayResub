@@ -18,22 +18,22 @@ clicks and then calls upon the the other functions when programed.
 */
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', function() {
-   userChoice = this.id
-   userChoiceDisplay.innerHTML = userChoice
-   generateComputerChoice()
-   getResult()
-   countDown()
+   userChoice = this.id;
+   userChoiceDisplay.innerHTML = userChoice;
+   generateComputerChoice();
+   getResult();
+   countDown();
    
    
    
    // Calls the gameOver function after 5 turns
 
    if(turns == 5) {
-      gameOver(possibleChoices, countDown)
+      gameOver(possibleChoices, countDown);
    }
    
 
-}))
+}));
 
 /**
  * This generates a random number between 1 - 3 for the computer by giving 
@@ -41,18 +41,18 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
  * to the User.
  */
 function generateComputerChoice() {
-   const randomNumber = Math.floor(Math.random() * 3) + 1
+   const randomNumber = Math.floor(Math.random() * 3) + 1;
    
    if (randomNumber === 1) {
-      computerChoice = 'rock'
+      computerChoice = 'rock';
    }
    if (randomNumber === 2) {
-      computerChoice = 'paper'
+      computerChoice = 'paper';
    }
    if (randomNumber === 3) {
-      computerChoice = 'scissors'
+      computerChoice = 'scissors';
    }
-   computerChoiceDisplay.innerHTML = computerChoice
+   computerChoiceDisplay.innerHTML = computerChoice;
 }
 
 /**
@@ -62,41 +62,41 @@ function generateComputerChoice() {
 function getResult() {
    
    if (computerChoice === userChoice) {
-      result = 'Tie'
+      result = 'Tie';
    }else if(userChoice === 'rock') {
       if(computerChoice === 'scissors') {
-         result = 'you win'
-         userscore++ // increments user score by 1 if won
-         win.innerHTML = userscore
+         result = 'you win';
+         userscore++; // increments user score by 1 if won
+         win.innerHTML = userscore;
       }else {
-         result = 'you lose'
-         computerscore++ // increments computers score by 1 if user lost
-         lose.innerHTML = computerscore
+         result = 'you lose';
+         computerscore++; // increments computers score by 1 if user lost
+         lose.innerHTML = computerscore;
       }
    }
    else if(userChoice === 'paper') {
       if(computerChoice === 'rock') {
-         result = 'you win'
-         userscore++
-         win.innerHTML = userscore
+         result = 'you win';
+         userscore++;
+         win.innerHTML = userscore;
       }else{
-         result = 'you lose'
-         computerscore++
-         lose.innerHTML = computerscore
+         result = 'you lose';
+         computerscore++;
+         lose.innerHTML = computerscore;
       }
    }
    else if(userChoice === 'scissors') {
       if(computerChoice === 'paper') {
-         result = 'you win'
-         userscore++
-         win.innerHTML = userscore
+         result = 'you win';
+         userscore++;
+         win.innerHTML = userscore;
       }else{
-         result = 'you lose'
-         computerscore++
-         lose.innerHTML = computerscore
+         result = 'you lose';
+         computerscore++;
+         lose.innerHTML = computerscore;
       }
    }
-   resultDisplay.innerHTML = result
+   resultDisplay.innerHTML = result;
 }
 
 /**
@@ -106,7 +106,7 @@ function getResult() {
 function countDown() {
    const turnsLeft = document.querySelector('.turns-left');
    turns++; // incrementes the turns by 1
-   turnsLeft.innerHTML = 5-turns // Displays turns left 
+   turnsLeft.innerHTML = 5-turns; // Displays turns left 
 }
 
 /**
@@ -115,14 +115,14 @@ function countDown() {
  */
 function gameOver(possibleChoices, countDown) {
    if(userscore > computerscore) {
-      alert('you win')
-      location.reload()
+      alert('YOU WON THE GAME!');
+      location.reload();
    }else if(userscore < computerscore) {
-      alert('you lose')
-      location.reload()
+      alert('YOU LOST GAME!');
+      location.reload();
    }else {
-      alert('Tie')
-      location.reload()
+      alert("IT'S A TIE!");
+      location.reload();
    }
 
 }
@@ -132,5 +132,5 @@ function gameOver(possibleChoices, countDown) {
  * bottom of the HTML page.
  */
 function refresh(possibleChoices){
-   window.location.reload("Refresh")
+   window.location.reload("Refresh");
  }

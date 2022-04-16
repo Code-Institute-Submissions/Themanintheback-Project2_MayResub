@@ -151,3 +151,39 @@ This is the main page of the website which provides a playable game of rock pape
     <h2 align='center'><img src='assets/images/restart.png'></h2>
 
 # Testing
+
+ - ## Validator Testing
+
+    - ### HTML
+        - No errors were returned when passing through official W3C Validator.
+
+        - Only 1 warning about my section element has no heading, but the heading is placed above the section element in the code.
+
+        <h2 align='center'><img src='assets/images/html-warning.png'></h2>
+
+    - ### CSS
+        - No errors were found  when passing through the official Jigsaw Validator.
+        
+        <h2 align='center'><img src='assets/images/css-validator.png'></h2>
+
+    - ### JavaScript
+        - No errors were found when passing through the official Jshint Vaildator.
+
+            - The following metrics were returned:
+
+            - There 7 functions in this file.
+
+            - Function with the largest signature takes 2 arguments, while the median is 0.
+
+            - Largest function has 24 statements in it, while the median is 7.
+
+            - The most complex functions  has a cyclomatic complexity value of 8 while the median is 2.
+
+            - 'const' is available in ES6 (use 'esversion:6') or Mozilla JS extensions (ues moz) for lines: 1 - 6 , 44 and 107.
+
+            - 'let' is available in ES6 (use 'esversion:6') or Mozilla JS extensions (ues moz) for lines: 7 - 12.
+
+            - 'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6'). 
+            - One unused variable "refresh".
+            
+        <h2 float='left'><img src='assets/images/js-validator.png'></h2>
