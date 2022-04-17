@@ -2,7 +2,7 @@
 
 [view the live project here.](https://themanintheback.github.io/Project2/)
 
-This is the main page of the website which provides a playable game of rock paper siccissors. The site is responsive and works on the a range of devices.
+This is the main page of the website which provides a playable game of rock, paper & siccissors. The site is responsive and works on the a range of devices.
 
 <h2 align='center'><img src='assets/images/Am-I-Responsive.png'></h2>
 
@@ -152,7 +152,7 @@ This is the main page of the website which provides a playable game of rock pape
 
 # Testing
 
- - ## Validator Testing
+- ## Validator Testing
 
     - ### HTML
         - No errors were returned when passing through official W3C Validator.
@@ -187,3 +187,38 @@ This is the main page of the website which provides a playable game of rock pape
             - One unused variable "refresh".
             
         <h2 float='left'><img src='assets/images/js-validator.png'></h2>
+
+- ## Bugs
+
+    - The word SCISSORS cannot be placed directly underneath its button proprely because the
+    words too long.
+
+    - The word RESTART cannot be placed directly underneath its button proprely because the words too long.
+
+- ## Deployment
+
+    - The site was deployed to GitHub pages. The steps to deploy are as follow:
+
+        - In the GitHub repositorie, I navigate to the settings tab.
+
+        - From the Generals page in Settings, on the left side Go to the Code and Automation section
+        and click Pages which will take you to GitHUb Pages.
+
+        - Once inside go to source and select Main branch and select Save.
+
+        - The page will refresh and the site will be successfully deployed.
+
+    The live link can be found here -  https://themanintheback.github.io/Project2/
+
+# Credits
+
+- ## Code
+
+    - The structure of the JS code came from code on a Youtube video found [her](https://www.youtube.com/watch?v=RwFeg0cEZvQ&t=559s)
+
+    - Styling of the buttons was taken from the Love Maths Project.
+
+- ## Content
+
+    - Icons at the top of the and icons for the buttons where taken from Font Awesome.
+    
