@@ -185,12 +185,6 @@ This is the main page of the website which provides a playable game of rock, pap
 
             - The most complex functions has a cyclomatic complexity value of 8 while the median is 2.
 
-            - 'const' is available in ES6 (use 'esversion:6') or Mozilla JS extensions (use moz) for lines: 1 - 6 , 44 and 107.
-
-            - 'let' is available in ES6 (use 'esversion:6') or Mozilla JS extensions (use moz) for lines: 7 - 12.
-
-            - 'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
-
             - One unused variable "refresh".
             
         <h2 float='left'><img src='assets/images/js-validator.png'></h2>

@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const computerChoiceDisplay = document.querySelector('#computer-choice');
 const userChoiceDisplay = document.querySelector('#user-choice');
 const resultDisplay = document.querySelector('#result');
