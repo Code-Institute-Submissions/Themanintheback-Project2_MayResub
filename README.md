@@ -211,11 +211,19 @@ This is the main page of the website which provides a playable game of rock, pap
 
     The live link can be found here -  https://themanintheback.github.io/Project2/
 
+- ## LightHoues Test
+    - The results are as follows:
+    - Performance: 94
+    - Accessibility: 79
+    - Best Practices: 92
+    - SEO: 91
+
+    <h2 align='center'><img src='assets/images/lighthouse-test.png'></h2
 # Credits
 
 - ## Code
 
-    - The structure of the JS code came from a coder on a Youtube video found [her](https://www.youtube.com/watch?v=RwFeg0cEZvQ&t=559s)
+    - Some the structure of the JS code came from a coder on a Youtube video found [her](https://www.youtube.com/watch?v=RwFeg0cEZvQ&t=559s)
 
     - Styling of the buttons was taken from the Love Maths Project.
 
