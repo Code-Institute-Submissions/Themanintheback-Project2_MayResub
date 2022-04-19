@@ -223,7 +223,7 @@ This is the main page of the website which provides a playable game of rock, pap
 
 - ## Code
 
-    - Some the structure of the JS code came from a coder on a Youtube video found [her](https://www.youtube.com/watch?v=RwFeg0cEZvQ&t=559s)
+    - Some of the structure of the JS code came from a coder on a Youtube video found [her](https://www.youtube.com/watch?v=RwFeg0cEZvQ&t=559s)
 
     - Styling of the buttons was taken from the Love Maths Project.
 
