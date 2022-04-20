@@ -5,6 +5,9 @@ const resultDisplay = document.querySelector('#result');
 const possibleChoices = document.querySelectorAll('.button');
 const win = document.querySelector('.win');
 const lose = document.querySelector('.lose');
+const open = document.querySelector('#open');
+const modalContainer = document.querySelector('#modal_container');
+const close = document.querySelector('#close');
 let userChoice;
 let computerChoice;
 let result;
@@ -135,3 +138,11 @@ function gameOver(possibleChoices, countDown) {
 function refresh(possibleChoices){
    window.location.reload("Refresh");
  }
+
+ open.addEventListener('click', () => {
+    modalContainer.classList.add('show');
+ })
+
+ close.addEventListener('click', () => {
+   modalContainer.classList.remove('show');
+})

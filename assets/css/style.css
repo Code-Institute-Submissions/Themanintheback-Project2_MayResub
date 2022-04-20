@@ -130,6 +130,29 @@ div {
     background-color: #dfdfdf;
 }
 
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    background-color: #fff;
+    padding: 30px 50px;
+    width: 600px;
+    max-width: 100%;
+}
 /* This will make the icons at the top of the page
 (person and computer) disappear and change heading font size
 when the user has a screen width of 500px or less. */
