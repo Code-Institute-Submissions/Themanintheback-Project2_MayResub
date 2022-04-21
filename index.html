@@ -20,16 +20,22 @@
     <title>RPS</title>
 </head>
 <body>
+    <!-- The sites Main Heading -->
     <h1 class="heading">Rock paper scissors</h1>
     
     <section>
-        <div class="modal-block">
-            <button id="open">
+
+        <!-- The Rules and Dark Mode buttons -->
+        <div>
+            <button id="open" class="modal-btn">
                 rules
             </button>
+            <button id="dark" class="dark-btn">
+                dark mode
+            </button>
         </div>
-        <!-- The icons of the player and computer underneath the Heading -->
 
+        <!-- The icons of the player and computer underneath the Heading -->
         <div class="icon-block">
             <div class="person-icon"><i class="fa-solid fa-person"></i></div>
         
@@ -37,7 +43,6 @@
         </div>
         
         <!-- This displays the players and computers choice -->
-
         <div class="display-block">
             <p>You: <span id="user-choice"></span></p>
             <p>Computer: <span id="computer-choice"></span></p>
@@ -45,13 +50,11 @@
         </div>
 
         <!-- This tells the user if they have won or lost the turn -->
-
         <div class="result-block">
             <p>Result: <span id="result"></span></p>
         </div>
 
         <!-- These are the Rock, Paper, Sicssor buttons -->
-
         <div class="button-block">
             <button class="button btn-rock" id="rock" data-type="rock">
                 <i class="fa-solid fa-hand-fist"></i>
@@ -65,41 +68,37 @@
         </div>
 
         <!-- This displays how many turns the user has left -->
-
         <div class="turn-block" id="turn">
             <p>Turns Left: <span class="turns-left">5</span></p>
         </div>
 
         <!-- This displays the user and computer score -->
-        
         <div class="win-lose-block">
             <p>win: <span class="win">0</span></p>
             <p>lost: <span class="lose">0</span></p>
         </div>
         
         <!-- This is the restart button -->
-        
         <div class="refresh-block">
             <button class="refresh" onclick="refresh(this)" data-type="restart">
                 <i class="fa-solid fa-arrows-rotate"></i>
             </button>
         </div>
 
-        
-
+        <!-- The Modal Box and its contents -->
         <div class="modal-container" id="modal_container">
             <div class="modal">
-                <h1>How to Play</h1>
+                <h1 class="how">How to Play</h1>
                 <ul>
                     <li>Beat the computer at Rock, Paper & Scissors</li>
                     <li>Each turn(5) pick either Rock, Paper or Sicssors</li>
                     <li>Rock crushes Scissors</li>
                     <li>Paper covers Rock</li>
                     <li>Scissors cuts paper</li>
-                    <li>Scores will be counted to determine the winner afther 5 turns</li>
+                    <li>Scores will be counted to determine the winner after 5 turns</li>
                 </ul>
-
-                <button id="close">
+                <!-- The close button inside Modal Box -->
+                <button id="close" class="modal-btn">
                     close me
                 </button>
             </div>

@@ -8,6 +8,8 @@ const lose = document.querySelector('.lose');
 const open = document.querySelector('#open');
 const modalContainer = document.querySelector('#modal_container');
 const close = document.querySelector('#close');
+const dark = document.querySelector('#dark')
+const element = document.body;
 let userChoice;
 let computerChoice;
 let result;
@@ -137,12 +139,16 @@ function gameOver(possibleChoices, countDown) {
  */
 function refresh(possibleChoices){
    window.location.reload("Refresh");
- }
+}
 
- open.addEventListener('click', () => {
+dark.addEventListener('click', () => {
+   element.classList.toggle('dark-mode');
+})
+
+open.addEventListener('click', () => {
     modalContainer.classList.add('show');
  })
 
- close.addEventListener('click', () => {
+close.addEventListener('click', () => {
    modalContainer.classList.remove('show');
 })

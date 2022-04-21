@@ -6,13 +6,29 @@
     margin: 5px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    text-transform: uppercase; 
+}
+
+body {
     background-color: #dfdfdf;
-    /* text-transform: capitalize; */
-    text-transform: uppercase;
+}
+
+/* The Dark Mode button rules*/
+.dark-btn {
+    background-color: #47a386;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* When Dark Mode button is clicked will */
+.dark-mode {
+    background-color: black;
+    color: #445361;
 }
 
 /* Heading rules */
-
 .heading {
     display: flex;
     align-items: center;
@@ -22,14 +38,12 @@
 }
 
 /* P element rule */
-
 p {
     font-size: 1.5rem;
     color: #445361;
 }
 
 /* div element rules */
-
 div {
     display: flex;
     align-items: center;
@@ -38,7 +52,6 @@ div {
 
 /* The rules for the icons at the top of the page
 (person and computer). */
-
 .icon-block {
     font-size: 50px;
     width: 100%;
@@ -49,13 +62,13 @@ div {
     gap: 5rem;
 }
 
+/* The TURNS LEFT display */
 #turn {
     width: 100%;
     margin:  40px 50px 5px 0px;
 }
 
 /* The Rock, Paper, scissors button styling rules */
-
 .button {
     border-radius: 30%;
     background-color: rgba(0, 0, 0, 0);
@@ -99,7 +112,6 @@ div {
 }
 
 /* The restart button styling rules */
-
 .refresh {
     border-radius: 30%;
     background-color: rgba(0, 0, 0, 0);
@@ -130,6 +142,7 @@ div {
     background-color: #dfdfdf;
 }
 
+/* Modal Box rules */
 .modal-container {
     background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
@@ -154,10 +167,22 @@ div {
     max-width: 100%;
     flex-direction: column;
 }
+
+.modal-btn {
+    background-color: #47a386;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* The h1 heading inside Modal Box */
+.how {
+    color: #445361;
+}
+
 /* This will make the icons at the top of the page
 (person and computer) disappear and change heading font size
 when the user has a screen width of 500px or less. */
-
 @media (max-width: 500px) {
     .heading {
         font-size: 1.6rem
@@ -178,7 +203,6 @@ when the user has a screen width of 500px or less. */
 /* This will change the headings font size to 1.7rem , paragraph font
 size and stop X-axis scrolling when the user has a screen width
 of 320px or less.  */
-
 @media (max-width: 320px) {
     html,body{
         overflow-x: hidden;
