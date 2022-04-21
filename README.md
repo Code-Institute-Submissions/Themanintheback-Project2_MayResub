@@ -86,8 +86,8 @@ This is the main page of the website which provides a playable game of rock, pap
 
     - nonoio
     <h2 fload="left>
-    <img src='assets/images/dark-btn.png'>
-    <img src='assets/images/dark-mode.png'>
+    <img src=''>
+    <img src=''>
     </h2>
 - ## Icons
 
