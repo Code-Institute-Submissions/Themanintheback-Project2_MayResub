@@ -72,11 +72,26 @@ This is the main page of the website which provides a playable game of rock, pap
 - ## Heading
     - Placed at the top of the page is the games heading ROCK PAPER SCISSORS all in capital letters making it easy to see and read for the user.
 
-<h2 align='center'><img src='assets/images/Heading.png'></h2>
+<h2 align='center'></h2>
 
+- ## Rules Button
+    - neninonio
+
+    <h2 float='left'>
+    <img src='assets/images/rules-btn.png'>
+    <img src='assets/images/rules.png'>
+    </h2>
+
+- ## Dark Mode Button
+
+    - nonoio
+    <h2 fload="left>
+    <img src='assets/images/dark-btn.png'>
+    <img src='assets/images/dark-mode.png'>
+    </h2>
 - ## Icons
 
-    - Directly underneath the Heading there are two icons used to represent the player and computer.
+    - Directly underneath the RULEs and DARK MODE button there are two icons used to represent the player and computer.
 
     - The icon of the person is used to let the user know that information underneath it is referring to themselves.
 

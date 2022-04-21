@@ -33,7 +33,6 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
    
    
    // Calls the gameOver function after 5 turns
-
    if(turns == 5) {
       gameOver(possibleChoices, countDown);
    }
