@@ -1,6 +1,5 @@
 
 /* Universal Selector rules */
-
 *{
     padding: 5px;
     margin: 5px;
@@ -22,7 +21,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* When Dark Mode button is clicked will */
+/* When Dark Mode button is clicked */
 .dark-mode {
     background-color: black;
     color: #445361;
@@ -175,6 +174,12 @@ div {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+/* The list in side Modal Box */
+li {
+    color: #445361;
+}
+
 /* The h1 heading inside Modal Box */
 .how {
     color: #445361;

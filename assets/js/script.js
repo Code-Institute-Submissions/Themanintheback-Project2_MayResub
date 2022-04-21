@@ -141,14 +141,17 @@ function refresh(possibleChoices){
    window.location.reload("Refresh");
 }
 
-dark.addEventListener('click', () => {
-   element.classList.toggle('dark-mode');
+// Show the Modal Box when you click the RULES button
+open.addEventListener('click', () => {
+   modalContainer.classList.add('show');
 })
 
-open.addEventListener('click', () => {
-    modalContainer.classList.add('show');
- })
-
+// Closes the Modal Box when you click the CLOSE button inside.
 close.addEventListener('click', () => {
    modalContainer.classList.remove('show');
+})
+
+// Turns on background colour of the black when you click the DARK MODE button
+dark.addEventListener('click', () => {
+   element.classList.toggle('dark-mode');
 })
