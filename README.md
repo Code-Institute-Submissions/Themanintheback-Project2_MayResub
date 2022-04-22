@@ -194,8 +194,11 @@ This is the main page of the website which provides a playable game of rock, pap
     - ### CSS
 
         - No errors were found when passing through the official Jigsaw Validator.
+
+        - 1 warning line 158: 'auto' is not defined by any specification as an allowed value for 'pointer-events, but is supported in multiple browsers.
         
         <h2 align='center'><img src='assets/images/css-validator.png'></h2>
+        <h2 align='center'><img src='assets/images/css-warning.png'></h2>
 
     - ### JavaScript
 
@@ -203,15 +206,15 @@ This is the main page of the website which provides a playable game of rock, pap
 
             - The following metrics were returned:
 
-            - There 7 functions in this file.
+            - There are 10 functions in this file.
 
             - Function with the largest signature takes 2 arguments, while the median is 0.
 
-            - Largest function has 24 statements in it, while the median is 7.
+            - Largest function has 24 statements in it, while the median is 2.
 
-            - The most complex functions has a cyclomatic complexity value of 8 while the median is 2.
+            - The most complex functions has a cyclomatic complexity value of 8 while the median is 1.
 
-            - One unused variable "refresh".
+            - One unused variable "refresh" on line 139 (this is the refresh function for the RESTART button).
             
         <h2 float='left'><img src='assets/images/js-validator.png'></h2>
 
@@ -238,13 +241,15 @@ This is the main page of the website which provides a playable game of rock, pap
     The live link can be found here -  https://themanintheback.github.io/Project2/
 
 - ## LightHoues Test
+
     - The results are as follows:
-    - Performance: 94
-    - Accessibility: 79
-    - Best Practices: 92
+    - Performance: 93
+    - Accessibility: 75
+    - Best Practices: 100
     - SEO: 91
 
-    <h2 align='center'><img src='assets/images/lighthouse-test.png'></h2
+    <h2 align='center'><img src='assets/images/lighthouse-report.png'></h2
+
 # Credits
 
 - ## Code
@@ -252,6 +257,10 @@ This is the main page of the website which provides a playable game of rock, pap
     - Some of the structure of the JS code came from a coder on a Youtube video found [her](https://www.youtube.com/watch?v=RwFeg0cEZvQ&t=559s)
 
     - Styling of the buttons was taken from the Love Maths Project.
+
+    - Modal box was taken from W3school.
+
+    - Dark Mode button was taken from W3shcool.
 
 - ## Content
 

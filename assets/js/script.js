@@ -5,10 +5,10 @@ const resultDisplay = document.querySelector('#result');
 const possibleChoices = document.querySelectorAll('.button');
 const win = document.querySelector('.win');
 const lose = document.querySelector('.lose');
-const open = document.querySelector('#open');
+const openModal = document.querySelector('#open');
 const modalContainer = document.querySelector('#modal_container');
-const close = document.querySelector('#close');
-const dark = document.querySelector('#dark')
+const closeModal = document.querySelector('#close');
+const dark = document.querySelector('#dark');
 const element = document.body;
 let userChoice;
 let computerChoice;
@@ -141,16 +141,16 @@ function refresh(possibleChoices){
 }
 
 // Show the Modal Box when you click the RULES button
-open.addEventListener('click', () => {
+openModal.addEventListener('click', () => {
    modalContainer.classList.add('show');
-})
+});
 
 // Closes the Modal Box when you click the CLOSE button inside.
-close.addEventListener('click', () => {
+closeModal.addEventListener('click', () => {
    modalContainer.classList.remove('show');
-})
+});
 
 // Turns on background colour of the black when you click the DARK MODE button
 dark.addEventListener('click', () => {
    element.classList.toggle('dark-mode');
-})
+});
