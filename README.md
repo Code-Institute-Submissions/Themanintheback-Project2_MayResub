@@ -73,13 +73,13 @@ This is the main page of the website which provides a playable game of rock, pap
 
     - Placed at the top of the page is the games heading ROCK PAPER SCISSORS all in capital letters making it easy to see and read for the user.
 
-<h2 align='center'></h2>
+<h2 align='center'><img src='assets/images/Heading.png'></h2>
 
 - ## Rules Button
 
     - Underneath the heading we have the RULES button.
 
-    - When clicked it will open a Modal Box that will tell you user rules of the game.
+    - When clicked it will open a Modal Box that will tell you user the rules of the game.
 
     - Inside the Moadal Box there is the CLOSE ME button that will close the box when clicked.
 
@@ -94,7 +94,7 @@ This is the main page of the website which provides a playable game of rock, pap
     
     - When clicked it will turn the background colour of the site black.
 
-    - Clicking the button again will turn the site back to original colour.
+    - Clicking the button again will turn the site back to it's original colour.
 
     <img src='assets/images/dark-btn.png'>
     <img src='assets/images/dark-mode.png'>
@@ -104,9 +104,9 @@ This is the main page of the website which provides a playable game of rock, pap
 
     - Directly underneath the RULEs and DARK MODE button there are two icons used to represent the player and computer.
 
-    - The icon of the person is used to let the user know that information underneath it is referring to themselves.
+    - The icon of the person is used to let the user know that the information underneath it is referring to themselves.
 
-    - The icon of the computer is used to let the users know that information underneath it is referring to the computer.
+    - The icon of the computer is used to let the users know that the information underneath it is referring to the computer.
 
     - The icons are also used for aesthetic purposes.
 
